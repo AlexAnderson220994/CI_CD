@@ -1,5 +1,7 @@
 # Steps for using Jenkins
 
+![Alt text](<images/CI CD diagram.jpg>)
+
 ## Creating Jobs
 
 ### Logging into Jenkins
