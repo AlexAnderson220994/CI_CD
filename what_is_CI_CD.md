@@ -2,7 +2,7 @@
 
 ## What is CI/CD?
 
-- Stands for Continuous Integration / Coninuous Delivery/Deployment
+- Stands for Continuous Integration / Continuous Delivery/Deployment
 - Introduces automation into the stages of development
 
 ## Why use CI/CD?
