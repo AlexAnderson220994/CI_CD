@@ -57,3 +57,21 @@ cat <key_name.pub>
 10) Click `Allow write access`
 11) Click `Add key`
 
+## Setting up a webhook
+
+1) On your GitHub repository that has the public SSH key connected:
+- Go to settings
+- Go to `Webhooks` in the left hand pane.
+2) Go to `Add webhook`.
+3) In "Payload URL" add the URL of the Jenkins account with `/github-webhook/` added to the end.
+````
+http://18.130.36.1:8080/github-webhook/
+````
+4) Change "Content type" to `application/json`
+5) You can alter the events to trigger the webhook (but definitely needs to be triggered by pushing)
+![Alt text](<images/add webhook on github.jpg>)
+6) Go to your job on Jenkins
+7) Go to "configure"
+8) Make sure the your config looks like the below two images:
+![Alt text](<images/jenkins webhook connection.jpg>)
+![Alt text](<images/build triggers.jpg>)
