@@ -16,14 +16,19 @@
 - Enter an item name for the job you're (something relatable) e.g. `alex-first-job`.
 - Choose the project type, in this case `Freestyle project`.
 - Click `OK`.
-2) On the next page:
-- Add a description under the "General" tab.
-- Also in "General", limit the number of previous builds that can be kept so you don't end up with loads of jobs and crash the system
+2) Move to the next page:
+3) Add a description under the "General" tab.
+4) Under "Office 365 Connector"
+- Restrict where the project can be run.
+![Alt text](<images/office 365.jpg>)
+5) Under "Source code management", select `Git`
+6) In "repo URL", paste in your SSH URL for your Github Repo
+4)  Also in "General", limit the number of previous builds that can be kept so you don't end up with loads of jobs and crash the system
 - Scroll down until you're in the "Build" tab and run commands to test out what the OS environment is and if Jenkins can run it.
 ![Alt text](images/number.jpg)
 
 
-3) Click `OK`
+3) Click `Save`
 
 ### Run the job
 
