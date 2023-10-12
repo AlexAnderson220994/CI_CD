@@ -29,9 +29,6 @@
 
 1) Next to the name of the job, in the dropdown list, click `Build now` to test the job.
 
-### Linking jobs
-
-1)
 
 ## Connecting Jenkins to GitHub using SSH
 
