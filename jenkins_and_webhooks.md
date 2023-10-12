@@ -20,7 +20,9 @@
 - Add a description under the "General" tab.
 - Also in "General", limit the number of previous builds that can be kept so you don't end up with loads of jobs and crash the system
 - Scroll down until you're in the "Build" tab and run commands to test out what the OS environment is and if Jenkins can run it.
-- 
+![Alt text](images/number.jpg)
+
+
 3) Click `OK`
 
 ### Run the job
@@ -75,3 +77,4 @@ http://18.130.36.1:8080/github-webhook/
 8) Make sure the your config looks like the below two images:
 ![Alt text](<images/jenkins webhook connection.jpg>)
 ![Alt text](<images/build triggers.jpg>)
+9) Test out the connection works by altering a test markdown file in that repository.
