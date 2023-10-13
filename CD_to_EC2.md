@@ -55,7 +55,6 @@ pm2 start app.js
 4) Change the app name in the settings.
 5) Push this change and test it on the pipeline.
 
-
-## 4) Manually Check that the App is running
+## 5) Manually Check that the App is running
 
 1) SSH into the app on your local host.
