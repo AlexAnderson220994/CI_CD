@@ -2,6 +2,14 @@
 
 ![Alt text](<images/Diagram v2.jpg>)
 
+## Development Process
+
+- **STEP 1** - Set up a new job on Jenkins
+- **STEP 2** - Set up the App Virtual Machine
+- **STEP 3** - Set up the DB Virtual Machine
+- **STEP 4** - Test all this by altering code
+- **STEP 5** - Manual checks by SSH into instance
+
 ## 1) Setting up the CD Environment
 
 1) Make a Jenkins job that will connect to EC2 create an App and a DB virtual machine.
