@@ -8,6 +8,9 @@
 - Name it `alex-CD`.
 2) This job needs to be triggered if job 2 is successful.
 3) SSH in with tech254.pem
+4) Change the restriction to the App EC2 instance.
+![Alt text](<images/office 365.jpg>)
+
 4) In the "Build" section, add the following shell script:
 ````
 # Allow yes to connect via SSH
