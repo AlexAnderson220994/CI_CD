@@ -79,6 +79,8 @@ pm2 start  app.js
 
 pm2 restart app.js
 ````
+![Alt text](<images/CD/4. App script.jpg>)
+
 4) Add a post build action to `alex-cd` to trigger `alex-app`
 5) Run the build on `alex-cd` again to test the script works.
 6) Remember to add **:3000** to the end of your public IP before the reverse proxy is set up.
