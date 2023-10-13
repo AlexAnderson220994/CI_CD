@@ -52,7 +52,7 @@ pm2 start app.js
 3) `sudo apt update` and `sudo apt upgrade -y`
 4) Get the correct version of MongoDB (version 3.x) with the curl command.
 5) Install this version of MongoDB
-6) Change the BindIP to 0.0.0.0
+6) Change the bindip from 127.0.0.0 to 0.0.0.0.
 7) Do `sudo systemctl start mongod` and `sudo systemctl enable mongod`.
 
 ## 4) Make a change to test the pipeline is working
