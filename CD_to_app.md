@@ -37,11 +37,52 @@ ssh -o "StrictHostKeyChecking=no" ubuntu@34.243.73.114 <<EOF
 EOF
 ````
 ![Alt text](<images/CD/1.Screenshot 2023-10-13 124509.jpg>)
+
+- The `rsync` command copies the code from the app folder to the instance.
+
 4) Manually trigger this job in Jenkins first to test it works.
 5) If the public IP shows the nginx page it has run successfully.
 6) If there's an error, open the console output and see what the error is.
 7) If the test is successful, add it to the post build options on your merge job `alex-merge`.
 
-## 
+## 2) Make new job to run the app
+
+![Alt text](<images/CD/3. App set up.jpg>)
+
+1) Create a fourth job on Jenkins called `alex-app`.
+2) Set up the rest of the job as per `alex-cd`.
+3) In "Build", in "Execute Commands", add the following script:
+````
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@34.243.73.114 <<EOF
+
+# install Node.js and npm
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install nodejs -y
+
+# move to app folder
+cd app
+
+# restart nginx
+sudo systemctl restart nginx
+
+# install dependencies
+npm install
+
+# install pm2 globally
+sudo npm install pm2 -g
+
+# kill pm2
+pm2 kill
+
+# Start the Node.js application
+pm2 start  app.js
+
+pm2 restart app.js
+````
+4) Add a post build action to `alex-cd` to trigger `alex-app`
+5) Run the build on `alex-cd` again to test the script works.
+6) Remember to add **:3000** to the end of your public IP before the reverse proxy is set up.
+
+## 3) Make new job to run DB
 
 
