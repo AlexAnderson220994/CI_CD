@@ -1,8 +1,10 @@
 # Integrating CD into the Pipeline
 
+## CI/CD Pipeline Diagram
+
 ![Alt text](<images/Diagram v2.jpg>)
 
-## Development Process
+## Development Process to make CD Architecture
 
 - **STEP 1** - Set up a new job on Jenkins
 - **STEP 2** - Set up the App Virtual Machine
