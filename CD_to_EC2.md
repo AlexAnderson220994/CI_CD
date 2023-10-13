@@ -51,9 +51,11 @@ pm2 start app.js
 
 1) In gitbash, cd into your repo folder.
 2) Make sure you're on the dev branch.
-3) Change
+3) Change a setting within the app test file to allow for your name in the title of the app.
+4) Change the app name in the settings.
+5) Push this change and test it on the pipeline.
 
 
 ## 4) Manually Check that the App is running
 
-1) SSH into the app on your local host
+1) SSH into the app on your local host.
