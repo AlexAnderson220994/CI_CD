@@ -48,12 +48,12 @@ pm2 start app.js
 
 1) Launch an EC2 instance on AWS
 2) Configure security group to allow Port 27017 for MongoDB 
-2) Use -y to SSH into the instance on first connection from local host.
-3) `sudo apt update` and `sudo apt upgrade -y`
-4) Get the correct version of MongoDB (version 3.x) with the curl command.
-5) Install this version of MongoDB
-6) Change the bindip from 127.0.0.0 to 0.0.0.0.
-7) Do `sudo systemctl start mongod` and `sudo systemctl enable mongod`.
+3) Use -y to SSH into the instance on first connection from local host.
+4) `sudo apt update` and `sudo apt upgrade -y`
+5) Get the correct version of MongoDB (version 3.x) with the curl command.
+6) Install this version of MongoDB
+7) Change the bindip from 127.0.0.0 to 0.0.0.0.
+8) Do `sudo systemctl start mongod` and `sudo systemctl enable mongod`.
 
 ## 4) Make a change to test the pipeline is working
 
