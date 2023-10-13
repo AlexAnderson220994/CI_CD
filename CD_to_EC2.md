@@ -17,9 +17,6 @@
 # Allow yes to connect via SSH
 -y
 
-# Create the database environment varaiable
-export DB_HOST=mongodb://<public/private_IP_of_DB_instance>:27017/posts
-
 # cd into app repo
 cd /home/ubuntu/sparta_app/app
 
@@ -28,17 +25,6 @@ sudo systemctl restart nginx
 
 # do npm install
 npm install
-
-node seeds/seed.js
-
-# install pm2
-sudo npm install pm2 -g
-
-# kill pm2 if its running
-pm2 kill
-
-# start pm2
-pm2 start app.js
 ````
 ## 2) Set up the App Virtual Machine
 
