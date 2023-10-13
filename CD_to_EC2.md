@@ -62,7 +62,3 @@ pm2 start app.js
 3) Change a setting within the app test file to allow for your name in the title of the app.
 4) Change the app name in the settings.
 5) Push this change and test it on the pipeline.
-
-## 5) Manually Check that the App is running
-
-1) SSH into the app on your local host.
