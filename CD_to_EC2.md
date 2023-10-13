@@ -1,5 +1,7 @@
 # Integrating CD into the Pipeline
 
+![Alt text](<images/CI CD diagram.jpg>)
+
 ## 1) Setting up the CD Environment
 
 1) Make a Jenkins job that will connect to EC2 create an App and a DB virtual machine.
