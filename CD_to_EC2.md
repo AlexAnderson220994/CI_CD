@@ -1,6 +1,6 @@
 # Integrating CD into the Pipeline
 
-![Alt text](<images/CI CD diagram.jpg>)
+![Alt text](<images/Diagram v2.jpg>)
 
 ## 1) Setting up the CD Environment
 
