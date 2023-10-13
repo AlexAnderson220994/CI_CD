@@ -4,6 +4,8 @@
 
 1) Make a Jenkins job that will connect to EC2 create an App and a DB virtual machine.
 - Name it `alex-CD`.
+2) This job needs to be triggered if job 2 is successful.
+3) SSH in with tech254.pem
 2) In the "Build" section, add the following shell script:
 ````
 # Allow yes to connect via SSH
