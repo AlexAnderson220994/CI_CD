@@ -6,7 +6,7 @@
 
 ## 1) SSH to EC2 and setting up nginx
 
-![Alt text](<images/CD/2. SSH to EC2 diagram.jpg>)
+![Alt text](<images/CD/2. SSH to EC2 diagram..jpg>)
 
 ### Step 1 - Set up a new EC2 Instance
 
