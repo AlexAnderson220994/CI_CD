@@ -8,6 +8,7 @@
 - Name it `alex-CD`.
 2) This job needs to be triggered if job 2 is successful.
 3) SSH in with tech254.pem
+![Alt text](<images/Git Merge/Screenshot 2023-10-12 113637.jpg>)
 4) Change the restriction to the App EC2 instance.
 ![Alt text](<images/office 365.jpg>)
 
